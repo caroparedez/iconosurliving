@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ÍCONO SUR Living | Invierte en rentas cortas en Pasto</title>
+<meta name="description" content="102 unidades desde 35 m² hasta 100 m² en el primer edificio integral de rentas cortas de Pasto. Barrio Palermo, carrera 40. Solicita información por WhatsApp.">
+<meta property="og:title" content="ÍCONO SUR Living | Inversión en rentas cortas en Pasto">
+<meta property="og:description" content="Inversión sólida. Experiencias memorables. Ubicación privilegiada.">
+<meta property="og:image" content="img/torre.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noche:#00292b; --panel:#1a3a3b; --arena:#c7b299; --hueso:#ece7e0; --tinta:#00292b; --texto:#e9e4dc; --suave:#a9b8b4;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:Montserrat,system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:300 16px/1.65 var(--sans);background:var(--noche);color:var(--texto);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--arena);outline-offset:3px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+section{padding:88px 0}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--arena)}
+h1{font-size:clamp(2.4rem,5.5vw,4.2rem)}
+h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:20px}
+h3{font-size:1.5rem;margin-bottom:8px}
+p+p{margin-top:14px}
+.lead{font-size:1.1rem;color:var(--texto);max-width:60ch}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border:1px solid var(--arena);background:var(--arena);color:var(--tinta);font:500 .95rem var(--sans);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--arena)}
+.btn.sec{background:transparent;color:var(--arena)}
+.btn.sec:hover{background:var(--arena);color:var(--tinta)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+/* Encabezado */
+header{position:sticky;top:0;z-index:20;background:rgba(0,41,43,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(199,178,153,.18)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:400 1.35rem var(--serif);letter-spacing:.3em;text-decoration:none;color:var(--arena)}
+.logo small{display:block;font:300 .55rem var(--sans);letter-spacing:.5em;margin-top:-2px}
+nav{display:flex;gap:28px;align-items:center;font-size:.85rem}
+nav a{text-decoration:none;color:var(--suave)}
+nav a:hover{color:var(--arena)}
+nav .btn{padding:9px 18px;font-size:.85rem;color:var(--tinta)}
+nav .btn:hover{color:var(--arena)}
+
+/* Hero */
+.hero{padding:56px 0 72px;background:radial-gradient(ellipse at 80% 20%,#0e4a4a 0,var(--noche) 60%)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{margin-bottom:22px}
+.hero .acts{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 40px}
+.hero figure{position:relative}
+.hero figure img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:180px 180px 0 0}
+.datos{display:grid;grid-template-columns:repeat(4,auto);gap:12px 32px;justify-content:start;border-top:1px solid rgba(199,178,153,.3);padding-top:22px}
+.datos b{display:block;font:500 2rem/1.1 var(--serif);color:var(--arena)}
+.datos span{font-size:.78rem;color:var(--suave)}
+
+/* Inversión */
+.inv .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.cifras{display:grid;gap:20px}
+.cifra{background:var(--panel);padding:28px 32px;border-left:3px solid var(--arena)}
+.cifra b{font:500 3rem/1 var(--serif);color:var(--arena)}
+.cifra p{margin-top:8px;font-size:.95rem}
+.lista{list-style:none;padding:0;margin-top:22px}
+.lista li{padding:14px 0;border-top:1px solid rgba(199,178,153,.2)}
+.lista strong{font-weight:500;color:var(--arena)}
+.nota{font-size:.72rem;color:var(--suave);margin-top:18px}
+
+/* Claras */
+.clara{background:var(--hueso);color:var(--tinta)}
+.clara h2,.clara h3{color:var(--tinta)}
+.clara .lead,.clara p{color:var(--tinta)}
+.galeria{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:40px}
+.galeria figure{position:relative;overflow:hidden}
+.galeria img{width:100%;height:100%;object-fit:cover;min-height:220px}
+.galeria figcaption{position:absolute;left:0;bottom:0;right:0;padding:10px 14px;background:rgba(0,41,43,.78);color:var(--hueso);font-size:.8rem}
+.g1{grid-column:span 4}.g2{grid-column:span 2}.g3{grid-column:span 6}
+.g3 img{min-height:0;aspect-ratio:21/8}
+.amen{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;list-style:none;padding:0}
+.amen li{border:1px solid rgba(0,41,43,.35);padding:7px 16px;font-size:.86rem}
+
+/* Unidades */
+.uni .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.uni .fotos{display:grid;gap:14px}
+.uni .fotos img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.espacios{display:grid;grid-template-columns:1fr 1fr;gap:6px 26px;margin:24px 0;list-style:none;padding:0}
+.espacios li{padding:10px 0;border-top:1px solid rgba(199,178,153,.25);font-size:.92rem}
+.espacios b{font-weight:500;color:var(--arena)}
+
+/* Ubicación */
+.ubi .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.ubi img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.ejes{list-style:none;padding:0;margin:22px 0}
+.ejes li{padding:9px 0;border-top:1px solid rgba(0,41,43,.2)}
+.ejes b{font-weight:600}
+.dir{font-size:.9rem;font-weight:500}
+
+/* Respaldo */
+.resp{background:var(--panel)}
+.resp .proy{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:26px;margin-top:34px}
+.resp .proy div{border-top:1px solid rgba(199,178,153,.35);padding-top:14px;font-size:.88rem;color:var(--suave)}
+.resp .proy b{display:block;color:var(--arena);font-weight:500;margin-bottom:4px}
+.aliados{margin-top:30px;font-size:.9rem;color:var(--suave)}
+
+/* Contacto */
+.contacto .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+form{background:var(--panel);padding:34px;display:grid;gap:18px}
+label{display:grid;gap:6px;font-size:.85rem;color:var(--suave)}
+input,select,textarea{font:300 1rem var(--sans);padding:12px 14px;background:var(--noche);border:1px solid rgba(199,178,153,.35);color:var(--texto);width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--arena);outline:none}
+input[aria-invalid=true]{border-color:#e08a7a}
+.err{color:#f0a898;font-size:.78rem;min-height:1em}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.78rem}
+.check input{width:auto;margin-top:4px}
+.sala{margin-top:28px;border-top:1px solid rgba(199,178,153,.3);padding-top:20px}
+.sala b{color:var(--arena);font-weight:500}
+
+footer{padding:34px 0 90px;font-size:.72rem;color:var(--suave);border-top:1px solid rgba(199,178,153,.15)}
+.flota{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.flota svg{width:30px;height:30px;fill:#fff}
+
+@media(max-width:900px){
+  section{padding:64px 0}
+  nav a:not(.btn){display:none}
+  .hero .wrap,.inv .wrap,.uni .wrap,.ubi .wrap,.contacto .wrap{grid-template-columns:1fr;gap:36px}
+  .hero figure{order:-1}.hero figure img{aspect-ratio:4/3;border-radius:120px 120px 0 0}
+  .datos{grid-template-columns:repeat(2,auto)}
+  .galeria{grid-template-columns:1fr}.g1,.g2,.g3{grid-column:auto}.g3 img{aspect-ratio:16/9}
+  .espacios{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="ÍCONO SUR Living, inicio">ÍCONO SUR<small>LIVING</small></a>
+    <nav aria-label="Principal">
+      <a href="#inversion">Inversión</a><a href="#edificio">Edificio</a><a href="#unidades">Unidades</a><a href="#ubicacion">Ubicación</a>
+      <a class="btn" href="#contacto">Quiero información</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>El primer edificio integral de rentas cortas en Pasto</h1>
+      <p class="lead">Inversión sólida. Experiencias memorables. Ubicación privilegiada. Compra una unidad en el barrio Palermo y genera ingresos con la demanda de alojamiento flexible.</p>
+      <div class="acts">
+        <a class="btn" href="#contacto">Quiero invertir</a>
+        <a class="btn sec" data-wa="Hola, quiero información sobre las unidades de ÍCONO SUR Living." href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+      <div class="datos">
+        <div><b>102</b><span>unidades</span></div>
+        <div><b>35–100 m²</b><span>por unidad</span></div>
+        <div><b>8</b><span>dúplex premium</span></div>
+        <div><b>400 m²</b><span>de rooftop</span></div>
+      </div>
+    </div>
+    <figure><img src="img/torre.jpg" alt="Fachada de ÍCONO SUR al atardecer, con las montañas de Pasto al fondo"></figure>
+  </div>
+</section>
+
+<section class="inv" id="inversion">
+  <div class="wrap">
+    <div>
+      <h2>Inversión con propósito</h2>
+      <p class="lead">ÍCONO SUR es el primer proyecto exclusivo de rentas cortas en Pasto, diseñado para maximizar rentabilidad y valorización.</p>
+      <ul class="lista">
+        <li><strong>Modelo probado.</strong> Rentabilidad respaldada por plataformas globales como Airbnb y Booking.com, y por una demanda local en alza.</li>
+        <li><strong>Diseño eficiente.</strong> Espacios optimizados para una operación de bajo costo y alta rotación.</li>
+        <li><strong>Servicios premium.</strong> Valor agregado que incrementa las tarifas y fideliza a los huéspedes.</li>
+        <li><strong>Comercio complementario.</strong> Locales en el primer piso, pensados para actividades como la gastronomía.</li>
+      </ul>
+    </div>
+    <div class="cifras">
+      <div class="cifra"><b>12%</b><p>de crecimiento anual del mercado global de alojamientos flexibles*</p></div>
+      <div class="cifra"><b>30%</b><p>de aumento en la demanda de rentas cortas en Pasto**</p></div>
+      <p class="nota">*Statista (2023). **Datos internos y plataformas como AirDNA/Airdata para la demanda en Pasto.</p>
+      <a class="btn" href="#contacto" style="justify-self:start">Pedir información de las unidades</a>
+    </div>
+  </div>
+</section>
+
+<section class="clara" id="edificio">
+  <div class="wrap">
+    <h2>Un edificio con servicios para el huésped</h2>
+    <p class="lead">12 pisos, 2 mezanines y un sótano con parqueaderos comunales. Lobby hotelero, coworking, coliving, sala multimedia, beer garden y un rooftop con vista al Galeras.</p>
+    <ul class="amen" aria-label="Amenidades del rooftop">
+      <li>Jacuzzi al aire libre</li><li>Gimnasio</li><li>Zona húmeda</li><li>Terraza de yoga</li><li>Fire pit social</li><li>BBQ y cocina abierta</li><li>Jardín de borde</li>
+    </ul>
+    <div class="galeria">
+      <figure class="g1"><img loading="lazy" src="img/lobby.jpg" alt="Lobby de ÍCONO SUR con recepción en mármol y muros de tierra"><figcaption>Lobby hotelero</figcaption></figure>
+      <figure class="g2"><img loading="lazy" src="img/fachada.jpg" alt="Fachada de ladrillo artesanal y madera de ÍCONO SUR"><figcaption>Fachada</figcaption></figure>
+      <figure class="g3"><img loading="lazy" src="img/jacuzzi.jpg" alt="Pérgola de terraza con jacuzzi en el rooftop"><figcaption>Pérgola de terraza y jacuzzi</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="uni" id="unidades">
+  <div class="wrap">
+    <div>
+      <h2>Unidades que se adaptan a la vida</h2>
+      <p class="lead">Cada unidad, desde 35 m² hasta 100 m², duplica el espacio y la comodidad de la oferta tradicional de la ciudad. Están diseñadas como hogares completos.</p>
+      <ul class="espacios">
+        <li><b>Trabajar:</b> estudio tipo oficina integrado</li>
+        <li><b>Cocinar:</b> cocina abierta con lavandería</li>
+        <li><b>Refrescarse:</b> baño generoso</li>
+        <li><b>Relajarse:</b> estar y balcón privado</li>
+        <li><b>Dormir:</b> cama King y amplio almacenamiento</li>
+        <li><b>Estancias:</b> individuales, en pareja o familias</li>
+      </ul>
+      <a class="btn" data-wa="Hola, quiero conocer las tipologías y disponibilidad de unidades de ÍCONO SUR Living." href="#" target="_blank" rel="noopener">Consultar disponibilidad</a>
+    </div>
+    <div class="fotos">
+      <img loading="lazy" src="img/unidad1.jpg" alt="Interior de una unidad con cama, escritorio y divisor de madera">
+      <img loading="lazy" src="img/unidad2.jpg" alt="Sala y comedor de una unidad con balcón y vista a la montaña">
+    </div>
+  </div>
+</section>
+
+<section class="clara ubi" id="ubicacion">
+  <div class="wrap">
+    <div>
+      <h2>Palermo, el corazón en transformación de Pasto</h2>
+      <p>Sobre la carrera 40, un eje de conectividad donde crecen la valorización urbana y el comercio.</p>
+      <ul class="ejes">
+        <li><b>Salud:</b> cerca de clínicas y centros médicos</li>
+        <li><b>Estudiantil:</b> accesible a universidades y colegios</li>
+        <li><b>Empresarial:</b> conectado a zonas corporativas</li>
+        <li><b>Ocio y cultura:</b> a pocos pasos de sitios turísticos</li>
+        <li><b>Gastronómico:</b> rodeado de la mejor oferta culinaria local</li>
+      </ul>
+      <p class="dir">Carrera 40 # 18-94, barrio Palermo, Pasto, Nariño</p>
+    </div>
+    <img loading="lazy" src="img/vista.jpg" alt="Vista aérea del barrio Palermo con ÍCONO SUR y las montañas de Pasto">
+  </div>
+</section>
+
+<section class="resp">
+  <div class="wrap">
+    <h2>Construcción con seriedad y legado</h2>
+    <p class="lead">Un equipo con trayectoria en desarrollo inmobiliario: socios estratégicos, ingenieros especializados y arquitectos de gran reconocimiento.</p>
+    <div class="proy">
+      <div><b>Edificio Siccon</b>Construye Siccon SAS. Diseño Manuel Felipe Woodcock Arquitectos.</div>
+      <div><b>Hito Av.</b>Construye Proyectos Urbanos Hito SAS. Diseño Raúl Díaz del Castillo y Manuel Felipe Woodcock Arquitectos.</div>
+      <div><b>Edificio Reserva Valle de Atriz</b>Construye Proyectos BYV SAS. Diseño Andrea Bravo y Manuel Felipe Woodcock Arquitectos.</div>
+      <div><b>Santa Isabel de Armenia</b>Construye Siccon SAS. Diseño Manuel Felipe Woodcock Arquitectos.</div>
+      <div><b>El Trigal</b>Construye Siccon SAS. Diseño Manuel Felipe Woodcock Arquitectos.</div>
+    </div>
+    <p class="aliados">Aliados del proyecto: Manuel Felipe Woodcock Arquitectos, JSMO Arquitectos, Siccon SAS, SEN y Fiduciaria Bogotá.</p>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div>
+      <h2>Recibe información de tu inversión</h2>
+      <p class="lead">Déjanos tus datos y un asesor te escribe por WhatsApp con tipologías, disponibilidad y formas de compra.</p>
+      <div class="sala">
+        <p><b>Sala de negocios</b></p>
+        <p>Carrera 37 # 19b-35, Edificio Hito Av., piso 3. Pasto.</p>
+        <p style="margin-top:18px"><a class="btn sec" data-wa="Hola, quiero hablar con un asesor de ÍCONO SUR Living." href="#" target="_blank" rel="noopener">Hablar con un asesor ahora</a></p>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <label>Nombre completo
+        <input name="nombre" autocomplete="name" required>
+        <span class="err" data-for="nombre"></span></label>
+      <label>Celular o WhatsApp
+        <input name="telefono" type="tel" autocomplete="tel" inputmode="tel" required>
+        <span class="err" data-for="telefono"></span></label>
+      <label>Me interesa
+        <select name="interes">
+          <option>Invertir en una unidad</option>
+          <option>Un dúplex premium</option>
+          <option>Un local comercial</option>
+          <option>Conocer la sala de negocios</option>
+        </select></label>
+      <label>Mensaje (opcional)
+        <textarea name="mensaje" rows="3"></textarea></label>
+      <label class="check"><input type="checkbox" name="acepto" required>
+        <span>Autorizo el uso de mis datos para que me contacten sobre ÍCONO SUR Living.</span></label>
+      <span class="err" data-for="acepto"></span>
+      <button class="btn" type="submit">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>ÍCONO SUR | Living. Las imágenes son renders ilustrativos y pueden variar. Las cifras de mercado provienen de las fuentes indicadas y no constituyen una promesa de rentabilidad. Consulta condiciones comerciales con un asesor.</p>
+  </div>
+</footer>
+
+<a class="flota" data-wa="Hola, quiero información sobre ÍCONO SUR Living." href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.37A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.2 15.02l-.3-.18-3.08.81.82-3-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.4 3.9c-.2 0-.5.07-.77.37-.26.3-1 1-1 2.4s1.04 2.8 1.18 3c.15.2 2.03 3.24 5 4.4 2.47.97 2.97.78 3.5.73.54-.05 1.74-.7 1.98-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35-.3-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.66-1.6-.9-2.2-.24-.57-.48-.5-.67-.5Z"/></svg>
+</a>
+
+<script>
+// 1) Cambia este número por el WhatsApp comercial (código de país + número, sin + ni espacios). Ej.: 573001234567
+const WHATSAPP_NUMBER = "57XXXXXXXXXX";
+
+const wa = t => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t)}`;
+
+// Enlaces directos a WhatsApp con mensaje prellenado
+document.querySelectorAll("[data-wa]").forEach(a => { a.href = wa(a.dataset.wa); });
+
+// Formulario: valida y abre WhatsApp con los datos del prospecto
+const form = document.getElementById("form");
+const setErr = (n, msg) => {
+  form.querySelector(`[data-for="${n}"]`).textContent = msg;
+  const f = form.elements[n]; if (f) f.setAttribute("aria-invalid", msg ? "true" : "false");
+};
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const d = Object.fromEntries(new FormData(form));
+  const tel = (d.telefono || "").replace(/\D/g, "");
+  let ok = true;
+  setErr("nombre", d.nombre.trim().length < 3 ? (ok = false, "Escribe tu nombre completo.") : "");
+  setErr("telefono", tel.length < 7 ? (ok = false, "Escribe un número de contacto válido.") : "");
+  setErr("acepto", d.acepto ? "" : (ok = false, "Debes autorizar el uso de tus datos para continuar."));
+  if (!ok) return;
+  const msg = `Hola, soy ${d.nombre.trim()}. Me interesa: ${d.interes}.` +
+    (d.mensaje.trim() ? ` ${d.mensaje.trim()}` : "") + ` Mi contacto: ${d.telefono.trim()}. (Enviado desde la página de ÍCONO SUR Living)`;
+  window.open(wa(msg), "_blank", "noopener");
+  form.reset();
+});
+</script>
+</body>
+</html>
